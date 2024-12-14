@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body{
-  background-color: rgba(0, 0, 0, 0.461);
+  background-color: #343541;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -7,17 +14,20 @@ body{
   height: 100vh;
 }
 .container{
-  background-color: white;
+  background-color: #444654;
   width: 350px;
   padding:20px;
   border-radius: 8px;
+  border: 1px solid #565869;
+  color: #ececf1;
 }
 .textbox{
   display: flex;
-  border:2px solid rgba(0, 221, 255, 0.714);
-  border-radius: 8px;
+  border:1px solid #565869;
+  border-radius: 6px;
   height: 50px;
   overflow: hidden;
+  background: #343541;
 }
 .textbox input{
   flex:1;
@@ -26,6 +36,8 @@ body{
   font-size: 18px;
   padding:10px;
   outline: none;
+  background: #343541;
+  color: #ececf1;
 }
 .image{
   cursor:pointer;
@@ -45,14 +57,15 @@ font-size: 35px;
 text-transform: uppercase;
 }
 .city{
-  color:yellow;
+  color: #10a37f;
 }
 .country{
-  color:rgba(0, 0, 0, 0.268);
+  color: #c5c5d2;
   margin-bottom: 10px
 }
 .temperature{
   font-size: 25px;
+  color: #ececf1;
 }
 .latlon{
   display: flex;
@@ -88,7 +101,7 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  color:rgba(0, 0, 0, 0.417);
+  color: #c5c5d2;
   padding: 3px;
   margin-top: 20px;
 }
@@ -97,7 +110,7 @@ text-transform: uppercase;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  color: rgba(18, 228, 228, 0.892);
+  color: #10a37f;
   font-family:Georgia, 'Times New Roman', Times, serif;
 
 

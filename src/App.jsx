@@ -1,7 +1,7 @@
-
 import { useEffect, useState } from 'react'
 import PropTypes from "prop-types";
 import './App.css'
+import LandingPage from './components/LandingPage'
 import searchIcon from "./assets/search.png";
 import humidity from "./assets/humidity.png";
 import wind from "./assets/wind.png";
@@ -125,9 +125,17 @@ setcityNotFound(false);
       search();
     }
   }
+  const [showWeatherApp, setShowWeatherApp] = useState(false);
   useEffect(function(){
-    search();
-  },[])
+    if (showWeatherApp) {
+      search();
+    }
+  },[showWeatherApp])
+
+  if (!showWeatherApp) {
+    return <LandingPage onEnterApp={() => setShowWeatherApp(true)} />;
+  }
+
   return (
     <>
       <div className="container">
